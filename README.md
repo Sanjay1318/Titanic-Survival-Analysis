@@ -1,98 +1,75 @@
-# 🚢 Titanic Survival Analysis | Python + Power BI
+# 🚢 Titanic Survival Analysis
 
-This project analyzes passenger survival patterns from the Titanic disaster using **Python (EDA)** and a **Power BI dashboard**.
-
----
-
-## 🎯 Project Objective
-
-To understand which passenger groups had higher chances of survival by analyzing:
-- Gender
-- Passenger Class
-- Age Groups
+Exploratory data analysis on the classic Titanic dataset using Python, paired with an interactive Power BI dashboard to visualize survival patterns across passenger demographics.
 
 ---
 
-## 🧠 Skills Used
-- Python (Pandas, Matplotlib)
-- Data Cleaning & Feature Engineering
-- Power BI Dashboard Design
-- Data Storytelling
+## 📌 Objective
+
+To explore what factors most influenced survival during the Titanic disaster, using statistical analysis and clear data visualizations to communicate findings effectively.
 
 ---
 
-## 📊 Key Insights
+## ✨ Features
 
-| Factor | Insight |
-|-------|--------|
-| **Overall Survival** | Only **38.38%** passengers survived |
-| **Gender Impact** | **74% of females** survived vs **19% of males** |
-| **Class Impact** | **1st-class** passengers had **63% survival**, 3rd-class only **24%** |
-| **Age Impact** | **Children** had highest chance of survival |
-
-➡️ “Women & children first” protocol strongly influenced results
+- 🐍 **Python EDA** — Data cleaning, missing value handling, feature analysis
+- 📊 **Survival Breakdown** — By gender, passenger class, age group, and embarkation point
+- 📈 **Power BI Dashboard** — Interactive filters to explore survival rates across dimensions
+- 🔍 **Correlation Analysis** — Identifying strongest predictors of survival
 
 ---
 
-## 🖥️ Dashboard Preview
+## 🛠️ Tech Stack
 
-> 📌 Power BI Dashboard screenshot
-
-![Dashboard](images/dashboard.png)
+| Layer | Technology |
+|---|---|
+| Analysis | Python (Pandas, Matplotlib, Seaborn) |
+| Visualization | Power BI |
+| Dataset | [Kaggle Titanic Dataset](https://www.kaggle.com/c/titanic/data) |
 
 ---
 
-## 📂 Folder Structure
+## 📂 Project Structure
 
-TitanicSurvivalAnalysis/
+```
+Titanic-Survival-Analysis/
 │
+├── analysis/
+│   └── titanic_eda.ipynb        # Python EDA notebook
+├── dashboard/
+│   └── TitanicDashboard.pbix    # Power BI dashboard
 ├── data/
-│ └── titanic.csv
-│
-├── python/
-│ └── eda.py
-│
-├── images/
-│ └── dashboard.png
-│
-├── pbix/
-│ └── TitanicSurvivalDashboard.pbix
-│
+│   └── titanic.csv              # Source dataset
 └── README.md
-
-
----
-
-## 🧪 Python Analysis Code
-
-Located in `python/eda.py`  
-Includes:
-- Missing value handling
-- Encoding gender
-- Survival rate calculations
-- Visual charts saved automatically
+```
 
 ---
 
-## 🛠 Tools Used
-| Tool | Purpose |
-|------|---------|
-| Python | Data cleaning & EDA |
-| Power BI | Visualization & Reporting |
-| GitHub | Version control |
+## 🔑 Key Insights
+
+- **Women survived at ~74%** vs ~19% for men — gender was the strongest survival factor
+- **1st class passengers** had a 63% survival rate vs 24% in 3rd class
+- **Children under 10** had significantly higher survival rates across all classes
+- ~19% of the dataset had missing age values — handled via median imputation by class
 
 ---
 
-## 💡 Business Learnings
+## 🚀 How to Run
 
-- Female passengers and children were prioritized during rescue
-- Economic status (First class) influenced survival probability
-- People aged 17–30 were less protected than children and seniors
+```bash
+# Clone the repository
+git clone https://github.com/Sanjay1318/Titanic-Survival-Analysis.git
+
+# Install dependencies
+pip install pandas matplotlib seaborn jupyter
+
+# Launch the notebook
+jupyter notebook analysis/titanic_eda.ipynb
+```
 
 ---
 
-## 👏 Author
+## 👤 Author
 
-**Sanjay Kumar**  
-🔗 GitHub: https://github.com/Sanjay1318  
-
+**Vadla Sanjay Kumar**  
+[LinkedIn](https://www.linkedin.com/in/sanjaychari007/) · [GitHub](https://github.com/Sanjay1318)
